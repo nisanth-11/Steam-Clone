@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome To Steam</title>
+  <link rel="stylesheet" href="../About/aboutus.css">
+  <link rel="icon" type="image/x-icon" href="../favicon/favicon.ico">
+  <link href="https://store.fastly.steamstatic.com/public/shared/css/motiva_sans.css?v=YzJgj1FjzW34&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-top">
+      <div class="logo"><img src="../images/StreamLogoWhite.png" height="auto" width="150px"></div>
+      <nav class="nav-links">
+        <a href="../store/home.html">STORE</a>
+        <a href="#">COMMUNITY</a>
+        <a href="../About/aboutus.html" class="current">ABOUT</a>
+        <a href="#">SUPPORT</a>
+      </nav>
+      <div class="actions">
+        <a href="../exeFiles/SteamSetup.exe" download><button class="install-btn">Install Steam </button></a>
+        <a href="#" class="login-link">| Login |</a>
+        <a href="#" class="language-link">Language</a>
+      </div>
+    </div>
+    
+  </header>
+  <div class="main"></div>
+    <h1>Welcome to Steam </h1>
+    <p><strong>Created by:</strong> Value Corporation <em>USA</em></p>
+    
+    
+    
+   
+    <section>
+        <p>Steam is a platform by <abbr title="Valve Corporation">Valve</abbr> for games and software.</p>
+    </section>
+
+    
+    
+    
+    <aside>
+        <p>Important Terms:</p>
+        <p><strong>Gaming:</strong> A fun and interactive way to spend time.</p>
+        <p><em>Developer Tools:</em> Tools for creating amazing games.</p>
+        <p><mark>Sales:</mark> Huge discounts during seasonal events!</p>
+    </aside>
+
+
+
+    <section>
+        <h2>Space Exploration</h2>
+        <iframe src="https://www.youtube.com/embed/ztTdDEA8uz4" width="600" height="400"></iframe>
+    </section>
+
+    
+
+    
+    <section>
+        <h2>Categories</h2>
+        <h3>Ordered List</h3>
+        <ol>
+            <li>Action</li>
+            <li>Adventure</li>
+            <li>RPG</li>
+        </ol>
+        <h3>Unordered List</h3>
+        <ul>
+            <li>FPS</li>
+            <li>MMORPG</li>
+            <li>Simulation</li>
+        </ul>
+        <h3>Definition List</h3>
+        <dl>
+            <dt>Steam Workshop</dt>
+            <dd>A place to find and share game mods.</dd>
+            <dt>Steam Deck</dt>
+            <dd>A portable gaming device by Valve.</dd>
+        </dl>
+    </section>
+
+    
+    <section>
+        <h2>Top Games</h2>
+        <table border="1">
+            <tr>
+                <th>Rank</th>
+                <th>Game</th>
+                <th colspan="2">Genres</th>
+            </tr>
+            <tr>
+                <td rowspan="2">1</td>
+                <td>CS:GO</td>
+                <td>Action</td>
+                <td>Shooter</td>
+            </tr>
+            <tr>
+                <td>Multiplayer</td>
+                <td>Strategy</td>
+            </tr>
+        </table>
+    </section>
+
+    
+
+    
+        
+
+    
+    <section>
+        <h2>Steam Artwork</h2>
+        <canvas id="steamCanvas" width="600" height="400" style="border:1px solid #000;"></canvas>
+        <script>
+            const canvas = document.getElementById("steamCanvas");
+            const ctx = canvas.getContext("2d");
+            ctx.fillStyle = "#e26900";
+            ctx.fillRect(100, 100, 300, 200);
+            ctx.font = "20px Arial";
+            ctx.fillStyle = "#000";
+            ctx.fillText("Welcome to Steam", 130, 200);
+        </script>
+    </section>
+
+</body>
+</html>

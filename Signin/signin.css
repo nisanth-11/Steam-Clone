@@ -1,0 +1,186 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('../images/signin_back.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    overflow-x: hidden;
+    display: flex;
+   
+}
+  
+  .header {
+    position: fixed;
+    color: #fff;
+    width: 100%;
+  }
+  
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #171d25;
+    text-transform: uppercase;
+  }
+  
+  .logo {
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .nav-links a {
+    color: #ccc;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: larger;
+  }
+  
+  .nav-links a:hover {
+    color: #fff;
+  }
+  .nav-links a.current{
+    color: #1a9fff;
+    text-decoration: underline;
+    
+    
+  }
+
+  .main-video{
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+
+  
+  
+  .actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .install-btn {
+    background-color: #5c7e10;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .install-btn:hover {
+    background-color: #76a40e;
+  }
+  
+  .login-link,
+  .language-link {
+    color: #ccc;
+    margin-left: 10px;
+    text-decoration: none;
+  }
+  
+  .login-link:hover,
+  .language-link:hover {
+    color: #fff;
+  }
+
+
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.login-form {
+    background: rgba(255, 255, 255, 0.1); 
+    padding: 40px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); 
+    text-align: center;
+    width: 300px;
+   
+}
+
+.login-logo {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.login-form h2 {
+    color: black;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.login-form label {
+    display: block;
+    color: black;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    color: black;
+}
+
+.login-form input[type="text"]::placeholder,
+.login-form input[type="password"]::placeholder {
+    color: black;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(6, 191, 255);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color:rgb(0, 138, 183);
+}
+
+.login-form .links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-form .links a {
+    color: #fff;
+    font-size: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-form .links a:hover {
+    text-decoration: underline;
+    
+}
+.error { color: #FF0001; }

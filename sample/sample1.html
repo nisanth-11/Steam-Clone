@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam - Lab 1</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Steam </h1>
+        <p><strong>Created by:</strong> Value Corporation<em>USA</em></p>
+    </header>
+    
+    <!-- Abbreviation -->
+    <section>
+        <p>Steam is a platform by <abbr title="Valve Corporation">Valve</abbr> for games and software.</p>
+    </section>
+    
+    <!-- Text Formatting -->
+    <aside>
+        <p>Important Terms:</p>
+        <p><strong>Gaming:</strong> A fun and interactive way to spend time.</p>
+        <p><em>Developer Tools:</em> Tools for creating amazing games.</p>
+        <p><mark>Sales:</mark> Huge discounts during seasonal events!</p>
+    </aside>
+
+    <!-- Links -->
+    <section>
+        <h2>Useful Links</h2>
+        <ul>
+            <li><a href="https://store.steampowered.com" target="_blank">Steam Store</a></li>
+            <li><a href="https://www.valvesoftware.com/en/" target="_blank">Valve Corporation</a></li>
+            <li><a href="https://steamcommunity.com/" target="_blank">Steam Community</a></li>
+        </ul>
+    </section>
+
+    <!-- Images with Frameset -->
+    <section>
+        <h2>Featured Games</h2>
+        <iframe src="https://store.steampowered.com/" width="600" height="400"></iframe>
+    </section>
+
+    <!-- Image Map -->
+    <section>
+        <h2>Steam Features</h2>
+        <img src="steam-dashboard.jpg" alt="Steam Dashboard" usemap="#steammenu">
+        <map name="steammenu">
+            <area shape="rect" coords="34,44,270,350" alt="Library" href="#library">
+            <area shape="circle" coords="477,400,75" alt="Store" href="#store">
+            <area shape="poly" coords="510,560,650,660,430,720" alt="Community" href="#community">
+        </map>
+    </section>
+
+    <!-- Lists -->
+    <section>
+        <h2>Categories</h2>
+        <h3>Ordered List</h3>
+        <ol>
+            <li>Action</li>
+            <li>Adventure</li>
+            <li>RPG</li>
+        </ol>
+        <h3>Unordered List</h3>
+        <ul>
+            <li>FPS</li>
+            <li>MMORPG</li>
+            <li>Simulation</li>
+        </ul>
+        <h3>Definition List</h3>
+        <dl>
+            <dt>Steam Workshop</dt>
+            <dd>A place to find and share game mods.</dd>
+            <dt>Steam Deck</dt>
+            <dd>A portable gaming device by Valve.</dd>
+        </dl>
+    </section>
+
+    <!-- Table -->
+    <section>
+        <h2>Top Games</h2>
+        <table border="1">
+            <tr>
+                <th>Rank</th>
+                <th>Game</th>
+                <th colspan="2">Genres</th>
+            </tr>
+            <tr>
+                <td rowspan="2">1</td>
+                <td>CS:GO</td>
+                <td>Action</td>
+                <td>Shooter</td>
+            </tr>
+            <tr>
+                <td>Multiplayer</td>
+                <td>Strategy</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Form -->
+    <section>
+        <h2>Join the Steam Community</h2>
+        <form action="#" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+            
+            <label for="favorite-game">Favorite Game:</label>
+            <input type="text" id="favorite-game" name="favorite-game"><br>
+            
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
+
+    <!-- Media Elements -->
+    <section>
+        <h2>Steam Media</h2>
+        <video controls width="400">
+            <source src="steam-gameplay.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <audio controls>
+            <source src="steam-theme.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+    </section>
+
+    <!-- Canvas -->
+    <section>
+        <h2>Steam Artwork</h2>
+        <canvas id="steamCanvas" width="600" height="400" style="border:1px solid #000;"></canvas>
+        <script>
+            const canvas = document.getElementById("steamCanvas");
+            const ctx = canvas.getContext("2d");
+            ctx.fillStyle = "#e26900";
+            ctx.fillRect(100, 100, 300, 200);
+            ctx.font = "20px Arial";
+            ctx.fillStyle = "#000";
+            ctx.fillText("Welcome to Steam", 130, 200);
+        </script>
+    </section>
+</body>
+</html>
