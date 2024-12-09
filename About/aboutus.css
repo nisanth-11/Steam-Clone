@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: 'Motiva Sans', sans-serif;
-    background: url('../images/Tile-Bg-Autumn.webp');
+    /*background: url('../images/Tile-Bg-Autumn.webp'); */
     color: #fff;
     overflow-x: hidden;
 }
@@ -242,6 +242,14 @@ table tr:hover {
     .main {
         padding: 10px;
     }
+}
+.parallax {
+    background-image: url("../images/signin_back.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-size: cover;*/
 }
 
   
